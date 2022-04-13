@@ -5,7 +5,7 @@ I am the type who can't learn things without practicing, so i decided to build t
 
 The main things that i learned throught this are what we call *Hooks* in **react** :
 1. useState.
-2. useEffect.
+2. useEffect.<br>
 I just started using these two hooks above in JSX in the previous repos (feel free to check it) then i challanged my self to rework the whole project with **@typescript**/TSX, and also to implement a new thing that i found very useful for me is :
-- useContext.
+- useContext.<br>
 Untill the moment, i really like the clarity of **react**'s docs and i'am looking forward to claiming maximum knowledge on them!
