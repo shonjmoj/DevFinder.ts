@@ -1,6 +1,6 @@
 import {useEffect, useState} from 'react'
 
-export interface test {
+export interface UserInfo {
     name: string;
     avatar_url: string;
     login: string;
@@ -20,11 +20,13 @@ export default function useFetch(value: string) {
     useEffect(() => {
         if (!value || value === 'undefined') return;
         fetch(`https://api.github.com/users/${value}`)
-            .then(res => res.json())
-            .then(data => {
+        .then(res => {
                 setIsloading(true);
-                setUser(data)
+                return res.json();
+            })
+            .then(data => {
                 setIsloading(false);
+                setUser(data);
             })
     },[value])
 

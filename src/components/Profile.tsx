@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import { UserContext } from '../context/UserContext'
 import Avatar from './Avatar';
 import Bio from './Bio';
-import {AiOutlineTwitter} from 'react-icons/ai'
+import {AiOutlineTwitter, AiOutlineLoading} from 'react-icons/ai'
 import {BiLink} from 'react-icons/bi'
 import {HiLocationMarker} from 'react-icons/hi'
 import Website from './Website';
@@ -11,7 +11,7 @@ import Location from './Location';
 
 
 export default function Profile() {
-    const {user} = useContext(UserContext); 
+    const {user, isLoading} = useContext(UserContext); 
   return (
     <div className='flex flex-col my-4 w-[90%] md:w-[90%] relative'>
         <div className='flex flex-col mx-4 md:mx-8 my-6 md:my-12'>
@@ -29,7 +29,8 @@ export default function Profile() {
         <div className='w-20 h-20 md:w-36 md:h-36 
                     rounded-lg flex justify-center items-center absolute 
                     right-0 top-2 mx-2 md:mx-4 overflow-hidden drop-shadow-lg'>
-            <Avatar size="w-14 h-14 md:w-24 md:h-24"/>
+            {isLoading ? <AiOutlineLoading size={70} className="animate-spin"/> :
+                <Avatar size="w-14 h-14 md:w-24 md:h-24"/>}
         </div>
     </div>
   )

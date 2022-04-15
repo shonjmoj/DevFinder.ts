@@ -1,16 +1,16 @@
 import {createContext, useState} from 'react'
-import useFetch, { test } from '../hooks/useFetch';
+import useFetch, { UserInfo } from '../hooks/useFetch';
 
 
-interface DataInfo {
+interface ResponseInfo {
     value? : string;
     setValue?: any;
-    user? : test;
+    user? : UserInfo;
     isLoading?: boolean; 
 }
 
 
-export const UserContext = createContext<DataInfo>({})
+export const UserContext = createContext<ResponseInfo>({})
 
 export const User = ({children} : {children: JSX.Element}) => {
     const [value, setValue] = useState('');
