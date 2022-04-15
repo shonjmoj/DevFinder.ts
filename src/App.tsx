@@ -7,7 +7,7 @@ import Title from "./components/Title";
 
 const App = () => {
     return (
-        <div className="flex gap-3 flex-col w-full items-center">
+        <div className="flex flex-col gap-3 w-screen justify-center items-center">
             <Title/>
             <SearchBar/>
             <InfoCard/>
