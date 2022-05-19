@@ -3,7 +3,7 @@ import { UserContext } from '../context/UserContext'
 
 
 export default function SearchBar() {
-    const {value, setValue} = useContext(UserContext);
+    const { setValue } = useContext(UserContext);
     const [updated, setUpdate] = useState('');
     
     const changeHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
