@@ -7,10 +7,12 @@ import Title from "./components/Title";
 
 const App = () => {
     return (
-        <div className="flex flex-col gap-3 w-screen justify-center items-center">
+        <div className="w-screen flex flex-col justify-between items-center">
             <Title/>
-            <SearchBar/>
-            <InfoCard/>
+            <div className="w-full flex flex-col items-center">
+                <SearchBar/>
+                <InfoCard/>
+            </div>
             <Footer/>
         </div>
     )

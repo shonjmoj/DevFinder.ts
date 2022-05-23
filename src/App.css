@@ -8,6 +8,6 @@
     font-family: 'Inconsolata', monospace;
 }
 
-body {
-    @apply bg-slate-900 flex text-gray-50 justify-center items-center Consola
+#root {
+    @apply bg-slate-900 flex text-gray-50 Consola min-h-screen
 }
