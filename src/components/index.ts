@@ -1,0 +1,12 @@
+export { default as Avatar } from '../components/Avatar';
+export { default as Twitter } from '../components/Twitter';
+export { default as Bio } from '../components/Bio';
+export { default as Footer } from '../components/Footer';
+export { default as Website } from '../components/Website';
+export { default as Title } from '../components/Title';
+export { default as Location } from '../components/Location';
+export { default as Profile } from '../components/Profile';
+export { default as ReposAndFollowers } from '../components/Repos&Followers';
+export { default as Stats } from '../components/Stats';
+export { default as InfoCard } from '../components/InfosCard';
+export { default as SearchBar } from '../components/SearchBar';

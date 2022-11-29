@@ -1,21 +1,16 @@
-import { Footer } from "./components/Footer";
-import InfoCard from "./components/InfoCard";
-import SearchBar from "./components/SearchBar";
-import Title from "./components/Title";
-
-
+import { Footer, Title, InfoCard, SearchBar } from './components/index';
 
 const App = () => {
-    return (
-        <div className="w-screen flex flex-col justify-between items-center">
-            <Title/>
-            <div className="w-full flex flex-col items-center">
-                <SearchBar/>
-                <InfoCard/>
-            </div>
-            <Footer/>
-        </div>
-    )
-}
+  return (
+    <div className='w-screen flex flex-col justify-between'>
+      <Title />
+      <div className='w-full flex flex-col items-center gap-2 lg:gap-3 xl:gap-6'>
+        <SearchBar />
+        <InfoCard />
+      </div>
+      <Footer />
+    </div>
+  );
+};
 
 export default App;
