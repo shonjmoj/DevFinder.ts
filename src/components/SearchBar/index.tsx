@@ -16,7 +16,7 @@ export default function SearchBar() {
   return (
     <div
       className='flex text-xs md:text-sm bg-slate-800
-            rounded-lg container max-w-[80%] md:max-w-[80%] lg:max-w-[50%] xl:max-w-[30%] drop-shadow-lg'>
+            rounded-lg container max-w-[80%] md:max-w-[80%] lg:max-w-[60%] xl:max-w-[40%] drop-shadow-lg'>
       <form className='m-1 w-full flex' onSubmit={submitHandler}>
         <input
           type='text'
